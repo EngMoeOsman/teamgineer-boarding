@@ -1,0 +1,94 @@
+└── src
+    ├── app
+    │   ├── about
+    │   │   └── page.tsx
+    │   ├── api
+    │   │   ├── authenticate
+    │   │   │   └── route.ts
+    │   │   ├── check-auth
+    │   │   │   └── route.ts
+    │   │   ├── og
+    │   │   │   ├── fetch
+    │   │   │   │   └── route.ts
+    │   │   │   ├── generate
+    │   │   │   │   └── route.tsx
+    │   │   │   └── proxy
+    │   │   │       └── route.ts
+    │   │   └── rss
+    │   │       └── route.ts
+    │   ├── blog
+    │   │   ├── page.tsx
+    │   │   ├── posts
+    │   │   │   ├── blog.mdx
+    │   │   │   ├── components.mdx
+    │   │   │   ├── content.mdx
+    │   │   │   ├── localization.mdx
+    │   │   │   ├── mailchimp.mdx
+    │   │   │   ├── pages.mdx
+    │   │   │   ├── password.mdx
+    │   │   │   ├── quick-start.mdx
+    │   │   │   ├── seo.mdx
+    │   │   │   ├── styling.mdx
+    │   │   │   └── work.mdx
+    │   │   └── [slug]
+    │   │       └── page.tsx
+    │   ├── favicon.ico
+    │   ├── gallery
+    │   │   └── page.tsx
+    │   ├── layout.tsx
+    │   ├── not-found.tsx
+    │   ├── page.tsx
+    │   ├── robots.ts
+    │   ├── sitemap.ts
+    │   └── work
+    │       ├── page.tsx
+    │       ├── projects
+    │       │   ├── automate-design-handovers-with-a-figma-to-code-pipeline.mdx
+    │       │   ├── building-once-ui-a-customizable-design-system.mdx
+    │       │   └── simple-portfolio-builder.mdx
+    │       └── [slug]
+    │           └── page.tsx
+    ├── components
+    │   ├── about
+    │   │   ├── about.module.scss
+    │   │   └── TableOfContents.tsx
+    │   ├── blog
+    │   │   ├── Post.tsx
+    │   │   ├── Posts.tsx
+    │   │   └── ShareSection.tsx
+    │   ├── breakpoints.scss
+    │   ├── Footer.module.scss
+    │   ├── Footer.tsx
+    │   ├── gallery
+    │   │   └── GalleryView.tsx
+    │   ├── Header.module.scss
+    │   ├── Header.tsx
+    │   ├── HeadingLink.module.scss
+    │   ├── HeadingLink.tsx
+    │   ├── index.ts
+    │   ├── Mailchimp.tsx
+    │   ├── mdx.tsx
+    │   ├── ProjectCard.module.scss
+    │   ├── ProjectCard.tsx
+    │   ├── Providers.tsx
+    │   ├── RouteGuard.tsx
+    │   ├── ScrollReveal.jsx
+    │   ├── ScrollToHash.tsx
+    │   ├── ThemeToggle.module.scss
+    │   ├── ThemeToggle.tsx
+    │   └── work
+    │       ├── Projects.module.scss
+    │       └── Projects.tsx
+    ├── resources
+    │   ├── content.tsx
+    │   ├── custom.css
+    │   ├── icons.ts
+    │   ├── index.ts
+    │   └── once-ui.config.ts
+    ├── types
+    │   ├── config.types.ts
+    │   ├── content.types.ts
+    │   └── index.ts
+    └── utils
+        ├── formatDate.ts
+        └── utils.ts
