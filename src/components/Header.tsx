@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { Fade, Flex, Line, Row, ToggleButton } from '@once-ui-system/core';
 
-import { about, contact, display, person, routes, work } from '@/resources';
+import { about, display, person, routes, work } from '@/resources';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import styles from './Header.module.scss';
 import { ThemeToggle } from './ThemeToggle';
@@ -166,7 +166,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon='book'
                       href='/contact'
-                      label={contact.label}
+                      label='Contact'
                       selected={pathname.startsWith('/contact')}
                     />
                   </Row>

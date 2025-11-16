@@ -1,7 +1,6 @@
 // import a pre-defined template for config and content options
 export {
   about,
-  contact,
   gallery,
   home,
   newsletter,

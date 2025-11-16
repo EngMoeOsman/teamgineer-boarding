@@ -1,6 +1,5 @@
 import {
   About,
-  contact,
   Gallery,
   Home,
   Newsletter,
@@ -272,13 +271,6 @@ const about: About = {
   },
 };
 
-const contact: contact = {
-  path: '/contact',
-  label: 'contact',
-  title: 'Client Success Stories',
-  description: `Insights and analysis of our work with clients worldwide`,
-};
-
 const work: Work = {
   path: '/work',
   label: 'Work',
@@ -335,4 +327,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { about, contact, gallery, home, newsletter, person, social, work };
+export { about, gallery, home, newsletter, person, social, work };
