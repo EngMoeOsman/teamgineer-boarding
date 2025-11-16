@@ -5,15 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { Fade, Flex, Line, Row, ToggleButton } from '@once-ui-system/core';
 
-import {
-  about,
-  blog,
-  display,
-  gallery,
-  person,
-  routes,
-  work,
-} from '@/resources';
+import { about, blog, display, person, routes, work } from '@/resources';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import styles from './Header.module.scss';
 import { ThemeToggle } from './ThemeToggle';
@@ -168,14 +160,14 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes['/blog'] && (
+              {routes['/contact'] && (
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon='book'
-                      href='/blog'
+                      href='/contact'
                       label={blog.label}
-                      selected={pathname.startsWith('/blog')}
+                      selected={pathname.startsWith('/contact')}
                     />
                   </Row>
                   <Row hide s={{ hide: false }}>
@@ -187,7 +179,7 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes['/gallery'] && (
+              {/* {routes['/gallery'] && (
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
@@ -205,7 +197,7 @@ export const Header = () => {
                     />
                   </Row>
                 </>
-              )}
+              )} */}
               {display.themeSwitcher && (
                 <>
                   <Line background='neutral-alpha-medium' vert maxHeight='24' />
