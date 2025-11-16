@@ -123,11 +123,55 @@ const about: About = {
         tags: [
           {
             name: 'React',
-            icon: 'javascript',
+            icon: 'reactjs',
           },
           {
             name: 'Next.js',
             icon: 'nextjs',
+          },
+          {
+            name: 'Vue',
+            icon: 'vuejs',
+          },
+          {
+            name: 'Angular',
+            icon: 'angularjs',
+          },
+          {
+            name: 'Laravel',
+            icon: 'laravel',
+          },
+          {
+            name: 'Spring Boot',
+            icon: 'spring',
+          },
+          {
+            name: 'Golang',
+            icon: 'golang',
+          },
+        ],
+        images: [],
+      },
+      {
+        title: 'Cloud & Infrastructure',
+        description: (
+          <>
+            Scalable cloud solutions and infrastructure management to ensure
+            your applications run smoothly and securely.
+          </>
+        ),
+        tags: [
+          {
+            name: 'AWS',
+            icon: 'aws',
+          },
+          {
+            name: 'Azure',
+            icon: 'azure',
+          },
+          {
+            name: 'Kubernetes',
+            icon: 'kubernetes',
           },
         ],
         images: [],
@@ -137,13 +181,21 @@ const about: About = {
         description: (
           <>
             Creating stunning visual identities that define your brand and
-            captivate your audience.
+            captivate your audience across all platforms and mediums.
           </>
         ),
         tags: [
           {
             name: 'Figma',
             icon: 'figma',
+          },
+          {
+            name: 'Photoshop',
+            icon: 'photoshop',
+          },
+          {
+            name: 'Adobe Creative Suite',
+            icon: 'adobe',
           },
         ],
         images: [],
@@ -152,22 +204,68 @@ const about: About = {
         title: 'Brand Guidelines',
         description: (
           <>
-            Establishing comprehensive brand systems that ensure consistency
-            across every touchpoint.
+            Comprehensive brand systems that establish consistency, build trust,
+            and ensure your brand identity remains cohesive across every
+            customer touchpoint. We create detailed guidelines that empower your
+            team to maintain brand integrity.
           </>
         ),
-        tags: [],
+        tags: [
+          {
+            name: 'Logo Systems',
+            icon: 'logo',
+          },
+          {
+            name: 'Color Palettes',
+            icon: 'palette',
+          },
+          {
+            name: 'Typography',
+            icon: 'text',
+          },
+          {
+            name: 'Brand Voice',
+            icon: 'mic',
+          },
+          {
+            name: 'Visual Assets',
+            icon: 'image',
+          },
+        ],
         images: [],
       },
       {
         title: 'Motion Design',
         description: (
           <>
-            Bringing your brand to life with engaging animations and dynamic
-            visual experiences.
+            Dynamic visual storytelling that brings your brand to life through
+            engaging animations, micro-interactions, and cinematic experiences.
+            From UI animations to promotional videos, we create motion that
+            captivates and communicates your brand's personality.
           </>
         ),
-        tags: [],
+        tags: [
+          {
+            name: 'UI Animations',
+            icon: 'layout',
+          },
+          {
+            name: 'Explainer Videos',
+            icon: 'video',
+          },
+          {
+            name: '3D Motion',
+            icon: 'cube',
+          },
+          {
+            name: 'After Effects',
+            icon: 'film',
+          },
+          {
+            name: 'Lottie',
+            icon: 'animation',
+          },
+        ],
         images: [],
       },
     ],

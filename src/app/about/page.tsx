@@ -15,6 +15,63 @@ import {
   Text,
 } from '@once-ui-system/core';
 import React from 'react';
+// Import React Icons
+import { IoLogoBuffer, IoMdCube } from 'react-icons/io';
+import {
+  MdAnimation,
+  MdImage,
+  MdMic,
+  MdMovie,
+  MdPalette,
+  MdTextFields,
+  MdVideocam,
+  MdViewQuilt,
+} from 'react-icons/md';
+import {
+  SiAdobe,
+  SiAdobephotoshop,
+  SiAmazon,
+  SiAngular,
+  SiFigma,
+  SiGo,
+  SiKubernetes,
+  SiLaravel,
+  SiNextdotjs,
+  SiReact,
+  SiSpring,
+  SiVuedotjs,
+} from 'react-icons/si';
+import { VscAzure } from 'react-icons/vsc';
+
+// Icon mapping for tags
+const iconMap: Record<
+  string,
+  React.ComponentType<{ size?: number | string; className?: string }>
+> = {
+  reactjs: SiReact,
+  nextjs: SiNextdotjs,
+  vuejs: SiVuedotjs,
+  angularjs: SiAngular,
+  laravel: SiLaravel,
+  spring: SiSpring,
+  golang: SiGo,
+  aws: SiAmazon,
+  azure: VscAzure,
+  kubernetes: SiKubernetes,
+  figma: SiFigma,
+  photoshop: SiAdobephotoshop,
+  adobe: SiAdobe,
+  logo: IoLogoBuffer,
+  palette: MdPalette,
+  text: MdTextFields,
+  mic: MdMic,
+  image: MdImage,
+  layout: MdViewQuilt,
+  video: MdVideocam,
+  cube: IoMdCube,
+  film: MdMovie,
+  animation: MdAnimation,
+};
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -269,15 +326,21 @@ export default function About() {
                     </Text>
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap='8' paddingTop='8'>
-                        {skill.tags.map((tag, tagIndex) => (
-                          <Tag
-                            key={`${skill.title}-${tagIndex}`}
-                            size='l'
-                            prefixIcon={tag.icon}
-                          >
-                            {tag.name}
-                          </Tag>
-                        ))}
+                        {skill.tags.map((tag, tagIndex) => {
+                          const IconComponent = tag.icon
+                            ? iconMap[tag.icon]
+                            : null;
+                          return (
+                            <Row
+                              key={`${skill.title}-${tagIndex}`}
+                              gap='4'
+                              vertical='center'
+                            >
+                              {IconComponent && <IconComponent size={16} />}
+                              <Tag size='l'>{tag.name}</Tag>
+                            </Row>
+                          );
+                        })}
                       </Row>
                     )}
                   </Column>
