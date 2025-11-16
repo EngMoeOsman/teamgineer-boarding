@@ -1,4 +1,4 @@
-export { Mailchimp } from '@/components/ContactForm';
+export { ContactForm } from '@/components/ContactForm';
 export { Footer } from '@/components/Footer';
 export { Header } from '@/components/Header';
 export { HeadingLink } from '@/components/HeadingLink';

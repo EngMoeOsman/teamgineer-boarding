@@ -16,10 +16,10 @@
     │   │   │       └── route.ts
     │   │   └── rss
     │   │       └── route.ts
-    │   ├── blog
+    │   ├── contact
     │   │   ├── page.tsx
     │   │   ├── posts
-    │   │   │   ├── blog.mdx
+    │   │   │   ├── contact.mdx
     │   │   │   ├── components.mdx
     │   │   │   ├── content.mdx
     │   │   │   ├── localization.mdx
@@ -52,7 +52,7 @@
     │   ├── about
     │   │   ├── about.module.scss
     │   │   └── TableOfContents.tsx
-    │   ├── blog
+    │   ├── contact
     │   │   ├── Post.tsx
     │   │   ├── Posts.tsx
     │   │   └── ShareSection.tsx

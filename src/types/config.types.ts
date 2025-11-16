@@ -10,8 +10,8 @@ import {
   SurfaceStyle,
   Theme,
   TransitionStyle,
-} from "@once-ui-system/core";
-import { NextFontWithVariable } from "next/dist/compiled/@next/font";
+} from '@once-ui-system/core';
+import { NextFontWithVariable } from 'next/dist/compiled/@next/font';
 
 /**
  * Display configuration for UI elements.
@@ -148,7 +148,7 @@ export type SameAsConfig = {
 };
 
 /**
- * Social sharing configuration for blog posts.
+ * Social sharing configuration for contact posts.
  */
 export type SocialSharingConfig = {
   display: boolean;
