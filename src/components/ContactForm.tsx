@@ -49,7 +49,6 @@ export const ContactForm: React.FC<React.ComponentProps<typeof Column>> = ({
     const { name, value } = e.target;
     setForm(prev => ({ ...prev, [name]: value }));
 
-    // Clear error for this field when user starts typing
     if (errors[name as keyof FormData]) {
       setErrors(prev => {
         const newErrors = { ...prev };
@@ -101,19 +100,28 @@ export const ContactForm: React.FC<React.ComponentProps<typeof Column>> = ({
     setErrorMessage('');
 
     try {
-      // Send to your API endpoint
-      const response = await fetch('/api/contact', {
+      // Using Web3Forms API (100% free, no backend needed)
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          access_key: '3df4bc9f-40dd-4c0c-99ad-e6fe0c0d7d18',
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+          from_name: form.name,
+          replyto: form.email,
+        }),
       });
 
       const data = await response.json();
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to send message');
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Failed to send message');
       }
 
       // Success state
