@@ -119,7 +119,7 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY='16' delay={0.6}>
-        <Projects range={[1, 1]} />
+        <Projects range={[1, 2]} />
       </RevealFx>
       {/* {routes['/contact'] && (
         <Column fillWidth gap='24' marginBottom='l'>
