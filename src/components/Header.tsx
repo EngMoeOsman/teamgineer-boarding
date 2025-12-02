@@ -3,10 +3,9 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { Fade, Flex, Line, Row, ToggleButton } from '@once-ui-system/core';
+import { Flex, Line, Row, ToggleButton } from '@once-ui-system/core';
 
 import { about, display, person, routes, work } from '@/resources';
-import { FaMapMarkerAlt } from 'react-icons/fa';
 import styles from './Header.module.scss';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -51,11 +50,11 @@ export const Header = () => {
 
   return (
     <>
-      <Fade
+      {/* <Fade
         s={{ hide: true }}
         fillWidth
         position='fixed'
-        height='80'
+        height='40'
         zIndex={9}
       />
       <Fade
@@ -67,7 +66,7 @@ export const Header = () => {
         to='top'
         height='80'
         zIndex={9}
-      />
+      /> */}
       <Row
         fitHeight
         className={styles.position}
@@ -89,14 +88,14 @@ export const Header = () => {
           textVariant='body-default-s'
         >
           {/* {display.location && <Row s={{ hide: true }}>{person.location}</Row>} */}
-          {display.location && (
+          {/* {display.location && (
             <Row s={{ hide: true }}>
               <div className={styles.locationBadge}>
                 <FaMapMarkerAlt className={styles.badgeIcon} />
                 <span className={styles.badgeText}>Dubai, UAE</span>
               </div>
             </Row>
-          )}{' '}
+          )} */}
         </Row>
         <Row fillWidth horizontal='center'>
           <Row
